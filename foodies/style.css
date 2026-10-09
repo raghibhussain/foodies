@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --brand: rgb(192, 59, 59);
+    --brand-dark: rgb(160, 42, 42);
+    --bs-body-font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* brand helpers */
+.text-brand{
+    color: var(--brand) !important;
+}
+.btn-brand{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--brand-dark);
+    --bs-btn-hover-border-color: var(--brand-dark);
+    --bs-btn-active-bg: var(--brand-dark);
+    --bs-btn-active-border-color: var(--brand-dark);
+    --bs-btn-focus-shadow-rgb: 192, 59, 59;
+}
+.btn-outline-brand{
+    --bs-btn-color: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--brand);
+    --bs-btn-hover-border-color: var(--brand);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--brand-dark);
+    --bs-btn-focus-shadow-rgb: 192, 59, 59;
+}
+.section-label{
+    color: var(--brand);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+.section-intro{
+    max-width: 640px;
+}
+
+/* header start */
+.navbar{
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+}
+.bglogo{
+    height: 56px;
+}
+.nav-link{
+    font-weight: 700;
+    position: relative;
+}
+.navbar .nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.2rem;
+    height: 3px;
+    background: var(--brand);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after{
+    transform: scaleX(1);
+}
+.navbar .nav-link.active{
+    color: var(--brand);
+}
+.header{
+    background: url(media/bg-1.jpg) center / cover no-repeat;
+    min-height: 100vh;
+    padding-top: 90px;
+}
+.header > .container{
+    min-height: calc(100vh - 90px);
+}
+.hero-content h1{
+    line-height: 1.15;
+}
+/* header end */
+
+/* highlights start */
+.highlights{
+    background-color: var(--brand);
+    color: #fff;
+    padding: 2.5rem 0;
+    box-shadow: 0 15px 21px -4px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+.highlights p{
+    opacity: 0.85;
+}
+/* highlights end */
+
+/* about start */
+.about-img{
+    max-height: 420px;
+    width: 100%;
+    object-fit: cover;
+}
+.check-list li{
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+}
+.check-list i{
+    color: var(--brand);
+    margin-right: 0.5rem;
+}
+/* about end */
+
+/* menu start */
+.menu-card{
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-card img{
+    transition: transform 0.5s ease;
+}
+.menu-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+.menu-card:hover img{
+    transform: scale(1.05);
+}
+/* menu end */
+
+/* faq start */
+.accordion{
+    --bs-accordion-active-color: var(--brand);
+    --bs-accordion-active-bg: rgba(192, 59, 59, 0.08);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(192, 59, 59, 0.25);
+}
+.accordion-button{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+/* faq end */
+
+/* banner start */
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(media/bg-3.jpg) center / cover no-repeat;
+    padding: 5rem 0;
+}
+/* banner end */
+
+/* contact start */
+.form-control:focus,
+.form-select:focus{
+    border-color: var(--brand);
+    box-shadow: 0 0 0 0.25rem rgba(192, 59, 59, 0.2);
+}
+.message-box{
+    height: 140px !important;
+}
+.newsletter{
+    background-color: var(--brand);
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+/* contact end */
+
+/* footer start */
+.footer{
+    background-color: #1b1b1b;
+    color: rgba(255, 255, 255, 0.75);
+}
+.footer-logo{
+    height: 48px;
+}
+.footer .nav-link{
+    color: rgba(255, 255, 255, 0.75);
+}
+.footer .nav-link:hover{
+    color: #fff;
+}
+.footer hr{
+    border-color: rgba(255, 255, 255, 0.2);
+}
+/* footer end */
+
+@media (max-width: 767.98px){
+    .header{
+        background-position: 70% center;
+    }
+    .hero-content{
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+}
