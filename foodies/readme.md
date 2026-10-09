@@ -76,3 +76,8 @@ git push -u origin main
 ## License
 
 Free to use for personal and educational purposes.
+
+## 👤 Author
+
+**Raghib**
+GitHub: [@raghibhussain](https://github.com/raghib hussain)
