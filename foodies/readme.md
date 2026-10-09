@@ -2,7 +2,7 @@
 
 A responsive restaurant / food landing page built with **plain HTML, CSS and Bootstrap 5** — no frameworks, no build step, and no custom JavaScript.
 
-**Live demo:** https://lovely-crostata-679715.netlify.app
+**Live demo:** https://foodiedemo.netlify.app
 
 ## Features
 
@@ -80,4 +80,4 @@ Free to use for personal and educational purposes.
 ## 👤 Author
 
 **Raghib**
-GitHub: [@raghibhussain](https://github.com/raghib hussain)
+GitHub: [@raghibhussain](https://github.com/raghibhussain)
